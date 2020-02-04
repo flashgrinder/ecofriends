@@ -3,8 +3,20 @@
 
 /* Interface */
 @import "modules/navigation/interface.sass"
+@import "modules/navigation/swiper.scss"
 /* Header Block */
 @import "modules/header/header.sass"
+/* Header Block */
+@import "modules/main/main-screen.sass"
+@import "modules/main/main-about.sass"
+@import "modules/main/main-mission.sass"
+@import "modules/main/main-problem.sass"
+@import "modules/main/main-technology.sass"
+@import "modules/main/main-centers.sass"
+@import "modules/main/main-team.sass"
+@import "modules/main/main-news.sass"
+@import "modules/main/main-gallery.sass"
+@import "modules/main/main-contacts.sass"
 
 
 
@@ -19,12 +31,12 @@
 
 html
 	font-size: $base-font-size
-	overflow-x: hidden
+	height: auto
 
 body
 	background-color: $white
 	font-family: 'Roboto', sans-serif
-	font-size: $base-font-size
+	// font-size: $base-font-size
 	overflow-x: hidden
 
 .wrapper
@@ -33,8 +45,11 @@ body
 .wrapper-fluid
 	+wrapper-full()
 
-.debug
-	+debug(rgba(0, 0, 0, 0.3), 1px solid rgb(19, 138, 92))
-
+// .debug
+// 	+debug(rgba(0, 0, 0, 0.3), 1px solid rgb(19, 138, 92))
+.main
+	margin-top: -138px
+.hide
+	display: none
 
 

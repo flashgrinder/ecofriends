@@ -1,0 +1,80 @@
+/* Main Technology Block */
+.main-technology
+    position: relative
+    background: $white
+    z-index: 5
+    padding-top: 60px
+    padding-bottom: 30px
+.technology-block
+    font-family: $roboto
+    &__heading
+        display: flex
+        align-items: center
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-align: justify
+        margin-bottom: 30px
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+            margin-left: 10px
+    &__content
+        +row-flex()
+        justify-content: space-between
+        align-items: center
+    &__text
+        +col()
+        +size(6)
+    &__wrapper
+        +row-flex()
+        justify-content: space-between
+    &__descr
+        // +col()
+        +size(6)
+        position: relative
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        display: flex
+        align-items: center
+        padding: 20px
+        color: $white
+        background: $blue
+        border-radius: 25px 0px
+        min-height: 210px
+        margin-bottom: 60px
+        &::before
+            content: ''
+            position: absolute
+            display: inline-block
+            border-style: solid
+            width: 0
+            height: 0
+        &:nth-child(1)   
+            &::before
+                right: -48px
+                top: 38%
+                border-width: 28px 0 28px 48.5px
+                border-color: transparent transparent transparent $blue
+        &:nth-child(2)
+            &::before
+                bottom: -48px
+                left: 38%
+                border-width: 48.5px 28px 0 28px
+                border-color: $blue transparent transparent transparent
+        &:nth-child(4)
+            &::before
+                top: 38%
+                left: -48px
+                border-width: 28px 48.5px 28px 0;
+                border-color: transparent $blue transparent transparent
+    &__img
+        +col()
+        +size(6)
+        img
+            width: 100%
+            height: auto
+            object-fit: contain

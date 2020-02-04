@@ -1,0 +1,51 @@
+/* Main Problem Block */
+.main-problem
+    position: relative
+    background: linear-gradient(180deg, #00A0E3 0%, rgba(0, 55, 120, 0.38) 100%), #00A0E3
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    z-index: 3
+    &::before
+        content: ''
+        position: absolute
+        background: url('../img/main/list-2.svg') no-repeat center bottom
+        background-size: contain
+        bottom: -43px
+        right: -18px
+        height: 346px
+        width: 432px
+.problem-block
+    font-family: $roboto
+    padding-top: 60px
+    padding-bottom: 60px
+    &__title
+        font-weight: 900
+        font-size: 40px
+        line-height: 47px
+        color: $white
+        margin: 0
+        text-transform: uppercase
+    &__content
+        +row-flex()
+        justify-content: flex-start
+        align-items: flex-start
+    &__item
+        +col()
+        +size(3)
+        margin-top: 30px
+    &__num
+        font-weight: 900
+        font-size: 80px
+        line-height: 94px
+        color: $white
+    &__descr
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        padding: 10px 30px
+        background: #8ABC36
+        border-radius: 0px 25px
+        min-height: 140px
+        display: flex
+        align-items: center
+        color: $white
+        margin-top: 15px

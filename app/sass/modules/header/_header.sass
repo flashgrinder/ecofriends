@@ -1,0 +1,93 @@
+.header
+    position: relative
+    width: 100%
+    z-index: 1001
+    background: linear-gradient(180deg, #324C64 0%, rgba(255, 255, 255, 0) 100%)
+.header-container
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+/* Logo */
+.logo
+    &__img
+        width: 150px
+        height: 52px
+        img
+            object-fit: contain
+    &__text
+        font-family: $roboto
+        font-size: 12px
+        font-weight: 500
+        line-height: 14px
+        text-align: center
+        color: #FFFFFF
+        width: 150px
+        margin-top: 15px
+/* Header Menu */
+.navigation-block
+    display: flex
+    align-items: flex-start
+.menu-top
+    position: relative
+    z-index: 1001
+    ul
+        display: flex
+        align-items: center
+        text-align: center
+        list-style: none
+        padding: 0
+        margin: 0
+        li
+            position: relative
+            z-index: 10
+            font-family: $roboto
+            font-weight: 900
+            font-size: $base-font-size
+            line-height: 19px
+            padding: 12px 20px
+            &::before
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+                height: 4px
+                width: 100%
+                border-radius: 10px
+                background: transparent
+            &:hover
+                color: $blue
+                &::before
+                    background: $blue
+            &:hover .menu-top__submenu
+                display: block
+                top: 40px
+                left: -10px
+                width: 120%
+            &:hover a
+                color: $blue
+            .menu-top__submenu
+                position: absolute
+                display: flex
+                flex-direction: column
+                z-index: 5
+                display: none
+                li
+                    font-family: $roboto
+                    font-weight: 500
+                    font-size: $base-font-size
+                    line-height: 19px
+                    padding: 15px 0
+                    border-radius: 10px
+                    margin-top: 9px
+                    background: $blue
+                    &:hover
+                        background: $green
+                        &::before
+                            background: none
+                    a
+                        color: $white
+    a
+        display: block
+        line-height: 19px
+        color: $white
