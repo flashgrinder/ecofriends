@@ -62,11 +62,7 @@ document.addEventListener('DOMContentLoaded', function(e){
         direction: 'horizontal',
         loop: true,
         speed: 2000,
-        effect: 'coverflow',
-        coverflowEffect: {
-            rotate: 30,
-            slideShadows: false,
-          },
+        effect: 'fade',
         autoplay: {
             delay: 4000
         },

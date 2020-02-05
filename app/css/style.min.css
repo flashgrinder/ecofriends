@@ -963,7 +963,7 @@ button.swiper-pagination-bullet {
   color: #FFFFFF;
 }
 
-/* Header Block */
+/* Main Blocks */
 
 /* Main Screen Block */
 
@@ -1913,6 +1913,328 @@ button.swiper-pagination-bullet {
   color: #00A0E3;
 }
 
+/* Projects Blocks */
+
+.slider-block__project {
+  background: -webkit-gradient(linear, left top, left bottom, from(#324C64), color-stop(69.79%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(180deg, #324C64 0%, rgba(255, 255, 255, 0) 69.79%);
+  width: 100%;
+  height: 650px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.slider-block__project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Abou Project Block */
+
+.about-project {
+  background: radial-gradient(100% 216.99% at 100% 100%, #00A0E3 0%, rgba(80, 160, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #8ABC36;
+}
+
+.about-project-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  min-height: 450px;
+}
+
+.about-project-block__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(41.66667% - 30px);
+  width: calc(41.66667% - 30px);
+}
+
+.about-project-block__img img {
+  width: 100%;
+  height: auto;
+}
+
+.about-project-block__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  font-family: "Roboto", sans-serif;
+}
+
+.about-project-block__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+/* Ecofriends Blocks */
+
+/* System Block */
+
+.ecofriends-system-block {
+  background: #F3F3F3;
+  min-height: 800px;
+}
+
+.ecofriends-system {
+  padding: 50px 0 0 0;
+}
+
+.ecofriends-system__heading {
+  margin-bottom: 30px;
+}
+
+.ecofriends-system__letter {
+  display: block;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecofriends-system__letter_blue {
+  color: #00A0E3;
+}
+
+.ecofriends-system__letter_green {
+  color: #8ABC36;
+}
+
+.ecofriends-system__wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+
+.ecofriends-system__content {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(51.66667% - 30px);
+  width: calc(51.66667% - 30px);
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.ecofriends-system__text {
+  background: #00A0E3;
+  padding: 10px 30px;
+  max-width: 320px;
+  min-height: 140px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.ecofriends-system__text b {
+  font-size: 20px;
+}
+
+.ecofriends-system__text:nth-child(1) {
+  border-radius: 0px 25px;
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.ecofriends-system__text:nth-child(2) {
+  border-radius: 0px 25px 25px 0px;
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.ecofriends-system__text:nth-child(3) {
+  border-radius: 25px 0px 0px 25px;
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.ecofriends-system__text:nth-child(4) {
+  border-radius: 0px 25px;
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+  -webkit-flex-basis: 50%;
+          flex-basis: 50%;
+}
+
+.ecofriends-system__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(45.83333% - 30px);
+  width: calc(45.83333% - 30px);
+  text-align: right;
+}
+
+.ecofriends-system__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* Achiv Block */
+
+.ecofriends-achiv-block {
+  padding: 50px 0 100px 0;
+}
+
+.ecofriends-achiv {
+  font-family: "Roboto", sans-serif;
+}
+
+.ecofriends-achiv__heading {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.ecofriends-achiv__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.ecofriends-achiv__letter_blue {
+  color: #00A0E3;
+}
+
+.ecofriends-achiv__letter_green {
+  color: #8ABC36;
+  margin-left: 10px;
+}
+
+.ecofriends-achiv__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.ecofriends-achiv__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(33.33333% - 30px);
+  width: calc(33.33333% - 30px);
+  text-align: center;
+  position: relative;
+}
+
+.ecofriends-achiv__item::before {
+  position: absolute;
+  content: '';
+  background: url("../img/ecofriends/lavr.png") no-repeat center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: -170px;
+}
+
+.ecofriends-achiv__num {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 117px;
+  color: #00A0E3;
+}
+
+.ecofriends-achiv__text {
+  position: relative;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 20px auto 0 auto;
+  width: 55%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #585858;
+}
+
 /* Footer Block */
 
 .footer {
@@ -2470,6 +2792,46 @@ body {
   .gallery-block__item {
     width: -webkit-calc(100% - 10px);
     width: calc(100% - 10px);
+  }
+
+  .about-project-block {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .about-project-block__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .about-project-block__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecofriends-system__wrapp {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecofriends-system__content {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecofriends-system__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecofriends-achiv__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecofriends-achiv__item {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .wrapper {

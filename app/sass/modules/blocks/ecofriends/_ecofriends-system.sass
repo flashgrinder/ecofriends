@@ -1,0 +1,71 @@
+/* System Block */
+.ecofriends-system-block
+    background: #F3F3F3
+    min-height: 800px
+.ecofriends-system
+    padding: 50px 0 0 0
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        display: block
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+    &__wrapp
+        +row-flex()
+        justify-content: space-between
+        align-items: flex-end
+    &__content
+        +col()
+        +size(6.20)
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__text
+        background: $blue
+        padding: 10px 30px
+        max-width: 320px
+        min-height: 140px
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+        margin-bottom: 20px
+        font-family: $roboto
+        color: $white
+        font-size: 16px
+        line-height: 19px
+        b
+            font-size: 20px
+        &:nth-child(1)
+            border-radius: 0px 25px
+            align-self: flex-start
+            flex-basis: 50%
+        &:nth-child(2)
+            border-radius: 0px 25px 25px 0px
+            align-self: flex-end
+            flex-basis: 50%
+        &:nth-child(3)
+            border-radius: 25px 0px 0px 25px
+            align-self: flex-start
+            flex-basis: 50%
+        &:nth-child(4)
+            border-radius: 0px 25px
+            align-self: flex-end
+            flex-basis: 50%
+    &__img
+        +col()
+        +size(5.5)
+        text-align: right
+        img
+            width: 100%
+            height: auto
+            object-fit: contain
+            
+        
