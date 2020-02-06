@@ -1,0 +1,47 @@
+/* Ecoprof Members Block */
+.ecoprof-members-block
+    background: #F3F3F3
+    padding: 50px 0 50px 0
+.ecoprof-members
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+            margin-left: 10px
+    &__content
+        +row-flex()
+        justify-content: space-between
+    &__text
+        +col()
+        +size(5)
+    &__list
+        margin-bottom: 15px
+    &__title
+        background: $blue
+        border-radius: 25px 0px
+        padding: 10px 25px
+        font-size: 16px
+        line-height: 19px
+        font-weight: 500
+        text-transform: uppercase
+        color: $white
+        text-align: center
+        margin-bottom: 15px
+    &__descr
+        li
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            color: $grey
+            padding: 5px 0
+    &__img
+        +col()
+        +size(7)
+        text-align: right

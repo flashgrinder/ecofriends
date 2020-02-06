@@ -1,0 +1,49 @@
+.modalContainer
+	position: absolute
+	z-index: 9999
+	background: radial-gradient(100% 216.99% at 100% 100%, #F1C04B 0%, rgba(209, 80, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #443264 !important
+	border-radius: 10px
+	+xs(padding, 20px 15px 0 15px !important)
+	&__wrapp
+		max-width: 500px
+	&__heading
+		font-family: $blogger
+		font-size: $big-font-size
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+		color: $white
+		line-height: 33px
+		&:first-of-type
+			margin: 0 0 10px 0
+		&:last-of-type
+			margin: 0
+	form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 0 30px 0 30px
+		margin: 0
+		+xs(padding, 0 15px 20px 15px !important)
+		input
+			height: 50px
+			border-radius: 100px
+			border: none
+			outline: none
+			padding-left: 20px
+			margin-top: 25px
+		input[type="submit"]
+			display: block
+			font-family: $roboto
+			border-radius: 100px
+			z-index: 5
+			text-align: center
+			font-size: $base-font-size
+			line-height: 14px
+			padding: 16px 24px
+			color: $white
+			width: 238px
+			background: transparent
+			border: 2px solid $white
+			margin: 25px auto 0 auto
+			cursor: pointer

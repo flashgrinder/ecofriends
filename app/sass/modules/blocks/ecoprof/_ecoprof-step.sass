@@ -1,0 +1,47 @@
+/* Ecoprof Step Block */
+.ecoprof-step-block
+    padding: 50px 0 50px 0
+    background: #F3F3F3
+.ecoprof-step
+    font-family: $roboto
+    &__heading
+        margin-bottom: 50px
+    &__letter
+        font-style: 500
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+    &__content
+        +row-flex()
+        justify-content: space-between
+    &__item
+        +col()
+        +size(3)
+    &__text
+        margin-bottom: 30px
+    &__title
+        background: $blue
+        border-radius: 25px 0px
+        padding: 10px 25px
+        font-size: 16px
+        line-height: 19px
+        font-weight: 500
+        text-transform: uppercase
+        display: flex
+        justify-content: space-around
+        color: $white
+        margin: 0 0 30px 0
+    &__list
+        padding-left: 18px
+        li
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            list-style-type: decimal
+            color: $grey
+            margin-bottom: 30px

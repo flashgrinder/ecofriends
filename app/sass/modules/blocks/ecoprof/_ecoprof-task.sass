@@ -1,0 +1,46 @@
+/* Ecoprof Task Block */
+.ecoprof-task-block
+    position: relative
+    background: #F3F3F3
+    padding: 50px 0 0 0
+    min-height: 900px
+    &::before
+        position: absolute
+        content: ''
+        background: url(../img/ecoprof/list.png) no-repeat center bottom
+        left: 0
+        bottom: 0
+        width: 235px
+        height: 310px
+.ecoprof-task
+    font-family: $roboto
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+            margin-left: 10px
+    &__content
+        +row-flex()
+        justify-content: space-between
+        align-items: flex-start
+    &__item
+        +col()
+        +size(3)
+        padding: 10px 30px
+        background: $blue
+        border-radius: 25px 0px
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        display: flex
+        align-items: center
+        color: $white
+        margin-bottom: 20px
+        min-height: 150px

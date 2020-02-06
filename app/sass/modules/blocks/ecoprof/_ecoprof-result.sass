@@ -1,0 +1,47 @@
+/* Ecoprof Result Block */
+.ecoprof-result-block
+    padding: 50px 0 50px 0
+    &_grey
+        background: #F3F3F3
+.ecoprof-result
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+    &__content
+        +row-flex()
+    &__text
+        +col()
+        +size(5)
+    &__list
+        li
+            position: relative
+            font-weight: 500
+            font-size: 16px
+            line-height: 19px
+            color: $grey
+            padding: 0 0 0 40px
+            margin-bottom: 20px
+            &::before
+                content: url('../img/ecoprof/check.svg')
+                text-align: center
+                position: absolute
+                padding-top: 2px
+                width: 28px
+                height: 24px
+                top: 50%
+                left: 0px
+                transform: translateY(-50%)
+                background: $blue
+                border-radius: 10px 0px
+    &__img
+        +col()
+        +size(7)
+        text-align: right

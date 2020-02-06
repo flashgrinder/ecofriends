@@ -1,0 +1,40 @@
+/* Ecoprof Game Block */
+.ecoprof-game-block
+    padding: 50px 0 50px 0
+.ecoprof-game
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+            margin: 0 -5px 0 0
+    &__content
+        +row-flex()
+        justify-content: space-between
+    &__text
+        +col()
+        +size(5)
+    &__descr
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: $grey
+        margin-bottom: 30px
+    &__subdescr
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: $white
+        background: $blue
+        border-radius: 25px 0px
+        padding: 30px
+    &__img
+        +col()
+        +size(7)
+        text-align: right

@@ -1,0 +1,57 @@
+/* Ecoprof About Block */
+.ecoprof-about
+    display: flex
+    +row-flex()
+    font-family: $roboto
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 50px
+    margin-bottom: 70px
+    &__text
+        +col()
+        +size(4.7)
+    &__wrapper
+        display: flex
+    &__letter
+        font-size: 80px
+        font-weight: 900
+        line-height: 94px
+        text-transform: uppercase
+        &_green
+            color: $green
+        &_blue
+            color: $blue
+    &__descr
+        text-align: justify
+        font-weight: 500
+        font-size: $base-font-size
+        line-height: 19px
+        color: $grey
+        margin-top: 25px
+    &__subdescr
+        position: relative
+        font-weight: 500
+        font-size: $base-font-size
+        line-height: 19px
+        text-align: justify
+        background: $blue
+        color: $white
+        z-index: 3
+        margin-top: 80px
+        b
+            display: block
+            margin-bottom: 5px
+        &::before
+            content: ''
+            background: $blue
+            position: absolute
+            left: -30px
+            right: -30px
+            top: -30px
+            bottom: -30px
+            z-index: -1
+            border-radius: 25px 0px 
+    &__img
+        +col()
+        +size(7)
+        text-align: right

@@ -1097,7 +1097,7 @@ button.swiper-pagination-bullet {
   bottom: 0;
   left: 0;
   background: url("../img/main/list.svg");
-  width: 157px;
+  width: 170px;
   height: 207px;
   z-index: 1;
 }
@@ -1988,7 +1988,7 @@ button.swiper-pagination-bullet {
 
 /* Ecofriends Blocks */
 
-/* System Block */
+/* Ecofriends System Block */
 
 .ecofriends-system-block {
   background: #F3F3F3;
@@ -2133,7 +2133,7 @@ button.swiper-pagination-bullet {
      object-fit: contain;
 }
 
-/* Achiv Block */
+/* Ecofriends Achiv Block */
 
 .ecofriends-achiv-block {
   padding: 50px 0 100px 0;
@@ -2233,6 +2233,998 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 19px;
   color: #585858;
+}
+
+/* Ecoprof Blocks */
+
+/* Ecoprof About Block */
+
+.ecoprof-about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.ecoprof-about__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(39.16667% - 30px);
+  width: calc(39.16667% - 30px);
+}
+
+.ecoprof-about__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.ecoprof-about__letter {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 94px;
+  text-transform: uppercase;
+}
+
+.ecoprof-about__letter_green {
+  color: #8ABC36;
+}
+
+.ecoprof-about__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-about__descr {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585858;
+  margin-top: 25px;
+}
+
+.ecoprof-about__subdescr {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  background: #00A0E3;
+  color: #FFFFFF;
+  z-index: 3;
+  margin-top: 80px;
+}
+
+.ecoprof-about__subdescr b {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ecoprof-about__subdescr::before {
+  content: '';
+  background: #00A0E3;
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  top: -30px;
+  bottom: -30px;
+  z-index: -1;
+  border-radius: 25px 0px;
+}
+
+.ecoprof-about__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(58.33333% - 30px);
+  width: calc(58.33333% - 30px);
+  text-align: right;
+}
+
+/* Ecoprof Task Block */
+
+.ecoprof-task-block {
+  position: relative;
+  background: #F3F3F3;
+  padding: 50px 0 0 0;
+  min-height: 900px;
+}
+
+.ecoprof-task-block::before {
+  position: absolute;
+  content: '';
+  background: url(../img/ecoprof/list.png) no-repeat center bottom;
+  left: 0;
+  bottom: 0;
+  width: 235px;
+  height: 310px;
+}
+
+.ecoprof-task {
+  font-family: "Roboto", sans-serif;
+}
+
+.ecoprof-task__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-task__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-task__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-task__letter_green {
+  color: #8ABC36;
+  margin-left: 10px;
+}
+
+.ecoprof-task__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.ecoprof-task__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+  padding: 10px 30px;
+  background: #00A0E3;
+  border-radius: 25px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  min-height: 150px;
+}
+
+/* Ecoprof Format Block */
+
+.ecoprof-format-block {
+  position: relative;
+  padding: 50px 0 50px 0;
+}
+
+.ecoprof-format {
+  font-family: "Roboto", sans-serif;
+}
+
+.ecoprof-format__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-format__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-format__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-format__letter_green {
+  color: #8ABC36;
+}
+
+.ecoprof-format__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.ecoprof-format__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(29.16667% - 30px);
+  width: calc(29.16667% - 30px);
+  position: relative;
+}
+
+.ecoprof-format__text {
+  position: relative;
+  border-radius: 0px 25px;
+  padding: 10px 30px;
+  min-height: 140px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.ecoprof-format__text b {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.ecoprof-format__text_blue {
+  background: #00A0E3;
+}
+
+.ecoprof-format__text_blue::before {
+  content: '';
+  position: absolute;
+  background: url("../img/ecoprof/treangle.png") no-repeat center;
+  top: 50%;
+  right: 0;
+  right: -85px;
+  width: 60px;
+  height: 70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ecoprof-format__text_grey {
+  background: #585858;
+}
+
+.ecoprof-format__text_grey::before {
+  content: '';
+  position: absolute;
+  background: url("../img/ecoprof/treangle.png") no-repeat center;
+  top: 50%;
+  right: -85px;
+  width: 60px;
+  height: 70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.ecoprof-format__text_green {
+  background: #8ABC36;
+}
+
+.ecoprof-format__text_big {
+  min-height: 300px;
+}
+
+/* Ecoprof Step Block */
+
+.ecoprof-step-block {
+  padding: 50px 0 50px 0;
+  background: #F3F3F3;
+}
+
+.ecoprof-step {
+  font-family: "Roboto", sans-serif;
+}
+
+.ecoprof-step__heading {
+  margin-bottom: 50px;
+}
+
+.ecoprof-step__letter {
+  font-style: 500;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-step__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-step__letter_green {
+  color: #8ABC36;
+}
+
+.ecoprof-step__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.ecoprof-step__item {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+}
+
+.ecoprof-step__text {
+  margin-bottom: 30px;
+}
+
+.ecoprof-step__title {
+  background: #00A0E3;
+  border-radius: 25px 0px;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  color: #FFFFFF;
+  margin: 0 0 30px 0;
+}
+
+.ecoprof-step__list {
+  padding-left: 18px;
+}
+
+.ecoprof-step__list li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  list-style-type: decimal;
+  color: #585858;
+  margin-bottom: 30px;
+}
+
+/* Ecoprof Result Block */
+
+.ecoprof-result-block {
+  padding: 50px 0 50px 0;
+}
+
+.ecoprof-result-block_grey {
+  background: #F3F3F3;
+}
+
+.ecoprof-result__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-result__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-result__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-result__letter_green {
+  color: #8ABC36;
+}
+
+.ecoprof-result__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.ecoprof-result__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(41.66667% - 30px);
+  width: calc(41.66667% - 30px);
+}
+
+.ecoprof-result__list li {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585858;
+  padding: 0 0 0 40px;
+  margin-bottom: 20px;
+}
+
+.ecoprof-result__list li::before {
+  content: url("../img/ecoprof/check.svg");
+  text-align: center;
+  position: absolute;
+  padding-top: 2px;
+  width: 28px;
+  height: 24px;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #00A0E3;
+  border-radius: 10px 0px;
+}
+
+.ecoprof-result__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(58.33333% - 30px);
+  width: calc(58.33333% - 30px);
+  text-align: right;
+}
+
+/* Ecoprof Part Block */
+
+.ecoprof-part-block {
+  padding: 50px 0 50px 0;
+}
+
+.ecoprof-part {
+  font-family: "Roboto", sans-serif;
+}
+
+.ecoprof-part__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-part__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-part__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-part__letter_green {
+  color: #8ABC36;
+  margin: 0 -5px 0 10px;
+}
+
+.ecoprof-part__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.ecoprof-part__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(45.83333% - 30px);
+  width: calc(45.83333% - 30px);
+}
+
+.ecoprof-part__prev {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585858;
+}
+
+.ecoprof-part__descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 30px 30px;
+  border-radius: 25px 0px;
+  color: #FFFFFF;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.ecoprof-part__descr_bg_blue {
+  background: #00A0E3;
+}
+
+.ecoprof-part__descr_bg_green {
+  background: #8ABC36;
+}
+
+.ecoprof-part__subdescr {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 30px 30px;
+  border-radius: 25px 0px;
+  color: #FFFFFF;
+  background: #8ABC36;
+  margin-top: 30px;
+  margin-left: 120px;
+}
+
+.ecoprof-part__subdescr::before {
+  content: '!';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -120px;
+  width: 94px;
+  height: 76px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  text-align: center;
+  background: #8ABC36;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  border-radius: 25px 0px;
+}
+
+.ecoprof-part__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(54.16667% - 30px);
+  width: calc(54.16667% - 30px);
+  text-align: right;
+}
+
+.ecoprof-part__img img {
+  width: 100%;
+  height: auto;
+}
+
+/* Ecoprof Members Block */
+
+.ecoprof-members-block {
+  background: #F3F3F3;
+  padding: 50px 0 50px 0;
+}
+
+.ecoprof-members__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-members__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-members__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-members__letter_green {
+  color: #8ABC36;
+  margin-left: 10px;
+}
+
+.ecoprof-members__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.ecoprof-members__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(41.66667% - 30px);
+  width: calc(41.66667% - 30px);
+}
+
+.ecoprof-members__list {
+  margin-bottom: 15px;
+}
+
+.ecoprof-members__title {
+  background: #00A0E3;
+  border-radius: 25px 0px;
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.ecoprof-members__descr li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585858;
+  padding: 5px 0;
+}
+
+.ecoprof-members__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(58.33333% - 30px);
+  width: calc(58.33333% - 30px);
+  text-align: right;
+}
+
+/* Ecoprof Game Block */
+
+.ecoprof-game-block {
+  padding: 50px 0 50px 0;
+}
+
+.ecoprof-game__heading {
+  margin-bottom: 30px;
+}
+
+.ecoprof-game__letter {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 59px;
+  text-transform: uppercase;
+}
+
+.ecoprof-game__letter_blue {
+  color: #00A0E3;
+}
+
+.ecoprof-game__letter_green {
+  color: #8ABC36;
+  margin: 0 -5px 0 0;
+}
+
+.ecoprof-game__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.ecoprof-game__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(41.66667% - 30px);
+  width: calc(41.66667% - 30px);
+}
+
+.ecoprof-game__descr {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #585858;
+  margin-bottom: 30px;
+}
+
+.ecoprof-game__subdescr {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background: #00A0E3;
+  border-radius: 25px 0px;
+  padding: 30px;
+}
+
+.ecoprof-game__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(58.33333% - 30px);
+  width: calc(58.33333% - 30px);
+  text-align: right;
+}
+
+/* Ecoprof Partners Block */
+
+.ecoprof-partners-block {
+  padding: 50px 0 50px 0;
+  background: #F3F3F3;
+}
+
+.ecoprof-partners__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00A0E3;
+  margin: 0;
+}
+
+.ecoprof-partners__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.ecoprof-partners__logo {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(25% - 30px);
+  width: calc(25% - 30px);
+  margin-bottom: 50px;
+}
+
+/* Blog */
+
+.blogMain {
+  position: relative;
+  z-index: 15;
+  background: #FFFFFF;
+}
+
+.blogBlock {
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blogBlock__title {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 33px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 60px auto;
+  color: #00A0E3;
+}
+
+.blogItem__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.blogCart {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  margin: 60px 0 60px 0;
+}
+
+.blogCart__img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blogCart__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blogCart__text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+}
+
+.blogCart__link-heading {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #8ABC36;
+  margin: 0;
+}
+
+.blogCart__more {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #00A0E3;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #00A0E3;
+}
+
+.blogCart__descr {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #585858;
+  margin: 24px 0;
+}
+
+.blogCart__date {
+  font-style: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #585858;
+  margin: 0 0 20px 0;
+}
+
+.blogCart__category a {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #8ABC36;
+}
+
+.blogContentBlock {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blogContent {
+  font-family: "Roboto", sans-serif;
+}
+
+.blogContent__heading {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #00A0E3;
+  text-align: left;
+  margin: 30px 0 20px 0;
+}
+
+.blogContent p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #585858;
+}
+
+.blogContent ul {
+  font-size: 20px;
+  color: #585858;
+  line-height: 30px;
 }
 
 /* Footer Block */
@@ -2706,6 +3698,54 @@ body {
   .contacts-block__title {
     font-size: 24px;
   }
+
+  .blogCart__img {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .blogCart__img {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+            order: 1;
+  }
+
+  .blogCart__text {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .blogCart__text {
+    margin-bottom: 30px;
+  }
+
+  .blogCart__link-heading {
+    font-size: 24px;
+  }
+
+  .blogCart__more {
+    font-size: 14px;
+  }
+
+  .blogCart__descr {
+    font-size: 14px;
+  }
+
+  .blogCart__date {
+    font-size: 14px;
+  }
+
+  .blogCart__category a {
+    font-size: 14px;
+  }
+
+  .blogContent__heading {
+    font-size: 24px;
+  }
+
+  .blogContent p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -2830,6 +3870,136 @@ body {
   }
 
   .ecofriends-achiv__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-about {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-about__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-about__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-task__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-task__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-format__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-format__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-step__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-step__item {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-result__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-result__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-result__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-part__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-part__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-part__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-members__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-members__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-members__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-game__content {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-game__text {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-game__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ecoprof-partners__container {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .ecoprof-partners__logo {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .blogCart {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .blogCart__img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .blogCart__text {
     margin-left: 5px;
     margin-right: 5px;
   }

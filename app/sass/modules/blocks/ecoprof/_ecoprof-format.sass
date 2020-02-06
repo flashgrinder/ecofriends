@@ -1,0 +1,71 @@
+/* Ecoprof Format Block */
+.ecoprof-format-block
+    position: relative
+    padding: 50px 0 50px 0
+.ecoprof-format
+    font-family: $roboto
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+    &__content
+        +row-flex()
+        justify-content: space-between
+        align-items: flex-start
+    &__item
+        +col()
+        +size(3.5)
+        position: relative
+    &__text
+        position: relative
+        border-radius: 0px 25px
+        padding: 10px 30px
+        min-height: 140px
+        margin-bottom: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        font-size: 16px
+        font-weight: 500
+        line-height: 19px
+        color: $white
+        b
+            width: 100%
+            text-align: left
+            margin-bottom: 20px
+        &_blue
+            background: $blue
+            &::before
+                content: ''
+                position: absolute
+                background: url('../img/ecoprof/treangle.png') no-repeat center
+                top: 50%
+                right: 0
+                right: -85px
+                width: 60px
+                height: 70px
+                transform: translateY(-50%)
+        &_grey
+            background: $grey
+            &::before
+                content: ''
+                position: absolute
+                background: url('../img/ecoprof/treangle.png') no-repeat center
+                top: 50%
+                right: -85px
+                width: 60px
+                height: 70px
+                transform: translateY(-50%)
+        &_green
+            background: $green
+        &_big
+            min-height: 300px
+            

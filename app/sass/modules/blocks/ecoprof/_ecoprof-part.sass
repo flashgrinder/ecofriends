@@ -1,0 +1,84 @@
+/* Ecoprof Part Block */
+.ecoprof-part-block
+    padding: 50px 0 50px 0
+.ecoprof-part
+    font-family: $roboto
+    &__heading
+        margin-bottom: 30px
+    &__letter
+        font-weight: 900
+        font-size: 50px
+        line-height: 59px
+        text-transform: uppercase
+        &_blue
+            color: $blue
+        &_green
+            color: $green
+            margin: 0 -5px 0 10px
+    &__content
+        +row-flex()
+        justify-content: space-between
+        align-items: center
+    &__text
+        +col()
+        +size(5.5)
+    &__prev
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        color: $grey
+    &__descr
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        padding: 30px 30px
+        border-radius: 25px 0px
+        color: $white
+        margin-top: 30px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &_bg
+            &_blue
+                background: $blue
+            &_green
+                background: $green
+    &__subdescr
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        padding: 30px 30px
+        border-radius: 25px 0px
+        color: $white
+        background: $green
+        margin-top: 30px
+        margin-left: 120px
+        &::before
+            content: '!'
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -120px
+            width: 94px
+            height: 76px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+            background: $green
+            font-weight: 900
+            font-size: 50px
+            line-height: 59px
+            border-radius: 25px 0px
+    &__img
+        +col()
+        +size(6.5)
+        text-align: right
+        img
+            width: 100%
+            height: auto
