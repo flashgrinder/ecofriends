@@ -110,6 +110,77 @@
   max-width: 300px;
 }
 
+.modalContainer {
+  z-index: 9999;
+  background: radial-gradient(100% 216.99% at 100% 100%, #00A0E3 0%, rgba(80, 160, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #8ABC36 !important;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.modalContainer__wrapp {
+  max-width: 500px;
+}
+
+.modalContainer__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 33px;
+}
+
+.modalContainer__heading:first-of-type {
+  margin: 0 0 10px 0;
+}
+
+.modalContainer__heading:last-of-type {
+  margin: 0;
+}
+
+.modalContainer form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: 0 30px 0 30px;
+  margin: 0;
+}
+
+.modalContainer form input {
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  margin-top: 25px;
+}
+
+.modalContainer form input[type="submit"] {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  border-radius: 100px;
+  z-index: 5;
+  text-align: center;
+  font-size: 16px;
+  line-height: 14px;
+  padding: 16px 24px;
+  color: #FFFFFF;
+  width: 238px;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  margin: 25px auto 0 auto;
+  cursor: pointer;
+}
+
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -3078,6 +3149,8 @@ button.swiper-pagination-bullet {
 
 /* Blog */
 
+/* Blog Page */
+
 .blogMain {
   position: relative;
   z-index: 15;
@@ -3195,6 +3268,8 @@ button.swiper-pagination-bullet {
   line-height: 22px;
   color: #8ABC36;
 }
+
+/* Blog Single Page */
 
 .blogContentBlock {
   padding-top: 50px;
@@ -3657,6 +3732,10 @@ body {
   display: none;
 }
 
+.fancybox-button svg {
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 1200px) {
   .gallery-block__item {
     width: -webkit-calc(50% - 30px);
@@ -3749,6 +3828,14 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .modalContainer {
+    padding: 20px 15px 0 15px !important;
+  }
+
+  .modalContainer form {
+    padding: 0 15px 20px 15px !important;
+  }
+
   .about-block {
     margin-left: -5px;
     margin-right: -5px;
