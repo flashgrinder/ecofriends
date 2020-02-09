@@ -10,12 +10,19 @@
     &__heading
         display: flex
         align-items: center
+        +md(justify-content, center)
     &__letter
         font-weight: 900
         font-size: 50px
         line-height: 59px
         text-align: justify
         margin-bottom: 30px
+        +md-block
+            font-size: 30px
+            line-height: 33px
+        +md-block
+            font-size: 24px
+            line-height: 27px
         &_blue
             color: $blue
         &_green
@@ -25,15 +32,18 @@
         +row-flex()
         justify-content: space-between
         align-items: center
+        +xl(justify-content, center)
     &__text
-        +col()
         +size(6)
+        +size-xl(12)
     &__wrapper
         +row-flex()
         justify-content: space-between
+        +md(justify-content, space-around)
     &__descr
-        // +col()
         +size(6)
+        +size-md(5.7)
+        +size-sm(12)
         position: relative
         font-weight: 500
         font-size: 16px
@@ -59,21 +69,44 @@
                 top: 38%
                 border-width: 28px 0 28px 48.5px
                 border-color: transparent transparent transparent $blue
+                +sm-block
+                    right: auto
+                    top: auto
+                    bottom: -48px
+                    left: 50%
+                    transform: translateX(-50%)
+                    border-width: 48.5px 28px 0 28px
+                    border-color: $blue transparent transparent transparent
         &:nth-child(2)
             &::before
                 bottom: -48px
-                left: 38%
+                left: 50%
+                transform: translateX(-50%)
                 border-width: 48.5px 28px 0 28px
                 border-color: $blue transparent transparent transparent
+        &:nth-child(3)
+            +sm(order, 1)
         &:nth-child(4)
             &::before
                 top: 38%
                 left: -48px
                 border-width: 28px 48.5px 28px 0;
                 border-color: transparent $blue transparent transparent
+                +sm-block
+                    right: auto
+                    top: auto
+                    bottom: -48px
+                    left: 50%
+                    transform: translateX(-50%)
+                    border-width: 48.5px 28px 0 28px
+                    border-color: $blue transparent transparent transparent
     &__img
         +col()
         +size(6)
+        +size-xl(10)
+        +size-lg(12)
+        +size-md(12)
+        +size-sm(12)
         img
             width: 100%
             height: auto

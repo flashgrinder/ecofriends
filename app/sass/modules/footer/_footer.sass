@@ -5,6 +5,9 @@
         align-items: flex-start
         justify-content: space-between
         padding: 30px 0 30px 0
+        +md-block
+            flex-direction: column
+            align-items: center
     &-logo
         &__img
         width: 150px
@@ -21,22 +24,36 @@
             width: 150px
             margin-top: 15px
     &-phone
+        +md-block
+            margin-top: 100px
         &__num
             font-style: normal
             font-weight: bold
             font-size: 30px
-            line-height: 35px
+            line-height: 33px
             display: flex
             align-items: center
             text-align: center
             color: $white
+            +xl-block
+                font-size: 24px
+                line-height: 27px
+            +md(display, block)
     &-menu
         margin-top: 10px
+        +lg(display, none)
     &-social
         display: flex
         justify-content: space-between
         align-items: center
         padding-bottom: 40px
+        +lg(margin-top, 40px)
+        +md-block
+            flex-direction: column
+            align-items: center
+            margin-top: 0
+        &__group
+            +md(margin-top, 30px)
         &__heading
             font-weight: 500
             font-size: 16px
@@ -48,7 +65,6 @@
             display: flex
             justify-content: center
             align-items: center
-            
             &-img
                 &:nth-child(1)
                 width: 30px

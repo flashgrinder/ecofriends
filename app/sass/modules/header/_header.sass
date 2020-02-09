@@ -1,14 +1,24 @@
 .header
-    position: relative
+    position: absolute
     width: 100%
     z-index: 1001
     background: linear-gradient(180deg, #324C64 0%, rgba(255, 255, 255, 0) 100%)
+    +lg-block
+        position: fixed
+        background: $grey
+        
 .header-container
     display: flex
     justify-content: space-between
     padding-top: 30px
+    +lg-block
+        padding-top: 17px
+        padding-bottom: 17px
 /* Logo */
 .logo
+    +lg-block
+        display: flex
+        align-items: center
     &__img
         width: 150px
         height: 52px
@@ -23,10 +33,66 @@
         color: #FFFFFF
         width: 150px
         margin-top: 15px
+        +lg-block
+            margin: 0 15px 0 15px
+        +sm(display, none)
+/* Burger */
+.burger
+    display: none
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    height: 40px
+    width: 50px
+    +lg(display, flex)
+    +md(align-self, center)
+    &__line
+        display: block
+        position: relative
+        width: 40px
+        height: 4px
+        background: $white
+        &::before,&::after
+            position: absolute
+            content: ''
+            width: 40px
+            height: 4px
+            background: $white
+            border-radius: 100px
+        &::before
+            bottom: 0
+            left: 0
+            margin-bottom: 14px
+        &::after
+            top: 0
+            left: 0
+            margin-top: 14px
 /* Header Menu */
 .navigation-block
     display: flex
     align-items: flex-start
+    +lg-block
+        position: fixed
+        width: 100vw
+        right: -100vw
+        background: rgba(0,0,0,0.85)
+        height: 100vh
+        min-height: 100%
+        z-index: 1001
+        transition: right .5s
+        top: 86px
+    +lg-block
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    +sm(top, 86px)
+    &_active
+        +lg-block
+            top: 86px
+            transition: right .5s
+            right: 0
+        +sm(top, 86px)
 .menu-top
     position: relative
     z-index: 1001
@@ -37,6 +103,11 @@
         list-style: none
         padding: 0
         margin: 0
+        +lg-block
+            flex-direction: column
+            align-items: center
+            width: 100%
+            overflow: hidden
         li
             position: relative
             z-index: 10
@@ -45,6 +116,14 @@
             font-size: $base-font-size
             line-height: 19px
             padding: 12px 20px
+            +lg-block
+                font-size: 24px
+                line-height: 27px
+                padding: 0
+                width: 100vw
+            +xs-block
+                font-size: 20px
+                line-height: 23px
             &::before
                 content: ''
                 position: absolute
@@ -55,6 +134,7 @@
                 width: 100%
                 border-radius: 10px
                 background: transparent
+                +lg(display, none)
             &:hover
                 color: $blue
                 &::before
@@ -64,6 +144,17 @@
                 top: 40px
                 left: -10px
                 width: 120%
+                +lg-block
+                    display: block
+                    position: relative
+                    transition: all 0.8s ease
+                    min-height: 100%
+                    height: 100%
+                    width: 100%
+                    left: auto
+                    top: auto
+                    right: 0
+                    transform: translateX(0)
             &:hover a
                 color: $blue
             .menu-top__submenu
@@ -72,6 +163,16 @@
                 flex-direction: column
                 z-index: 5
                 display: none
+                +lg-block
+                    position: relative
+                    display: block
+                    overflow: hidden
+                    min-height: 0
+                    height: 0
+                    top: 0
+                    right: -100%
+                    transition: all 0.5s ease
+                    transform: translateX(100%)
                 li
                     font-family: $roboto
                     font-weight: 500
@@ -81,13 +182,24 @@
                     border-radius: 10px
                     margin-top: 9px
                     background: $blue
+                    +lg-block
+                        font-size: 20px
+                    +xs-block
+                        font-size: 18px
+                        line-height: 21px
+                        padding: 0
                     &:hover
                         background: $green
                         &::before
                             background: none
                     a
                         color: $white
+                        padding: 15px 0
     a
         display: block
         line-height: 19px
         color: $white
+        +lg-block
+            padding: 30px 0
+        +xs-block
+            padding: 15px 0

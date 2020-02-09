@@ -39,13 +39,14 @@
     transition: background ease 1s
     height: 50px
     background: transparent
-    padding: 15px 30px
+    padding: 15px 20px
     color: $white
     &_size
         &_s
             max-width: 200px
         &_m
             max-width: 300px
+            +sm(width, 280px)
 .button-more
     display: flex
     justify-content: center

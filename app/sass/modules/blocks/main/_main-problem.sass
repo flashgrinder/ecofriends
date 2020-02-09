@@ -24,13 +24,21 @@
         color: $white
         margin: 0
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
     &__content
         +row-flex()
+        position: relative
+        z-index: 5
         justify-content: flex-start
         align-items: flex-start
+        +md(justify-content, center)
+            
     &__item
         +col()
         +size(3)
+        +size-md(12)
         margin-top: 30px
     &__num
         font-weight: 900

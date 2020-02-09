@@ -12,6 +12,13 @@
         font-size: 50px
         line-height: 59px
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
+            text-align: center
+        +md-block
+            font-size: 24px
+            line-height: 27px
         &_blue
             color: $blue
         &_green
@@ -23,10 +30,12 @@
     &__content
         +col()
         +size(6.20)
+        +size-sm(12)
         position: relative
         display: flex
         flex-direction: column
         align-items: center
+        +sm(justify-content, center)
     &__text
         background: $blue
         padding: 10px 30px
@@ -47,21 +56,34 @@
             border-radius: 0px 25px
             align-self: flex-start
             flex-basis: 50%
+            +sm-block
+                align-self: auto
+                border-radius: 25px 0px
         &:nth-child(2)
             border-radius: 0px 25px 25px 0px
             align-self: flex-end
             flex-basis: 50%
+            +sm-block
+                align-self: auto
+                border-radius: 25px 0px
         &:nth-child(3)
             border-radius: 25px 0px 0px 25px
             align-self: flex-start
             flex-basis: 50%
+            +sm-block
+                align-self: auto
+                border-radius: 25px 0px
         &:nth-child(4)
             border-radius: 0px 25px
             align-self: flex-end
             flex-basis: 50%
+            +sm-block
+                align-self: auto
+                border-radius: 25px 0px
     &__img
         +col()
         +size(5.5)
+        +size-sm(12)
         text-align: right
         img
             width: 100%

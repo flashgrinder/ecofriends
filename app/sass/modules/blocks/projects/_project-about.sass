@@ -1,20 +1,29 @@
 /* Abou Project Block */
 .about-project
     background: radial-gradient(100% 216.99% at 100% 100%, #00A0E3 0%, rgba(80, 160, 255, 0.277269) 62.18%, rgba(255, 255, 255, 0) 100%), #8ABC36
+    padding: 50px 0 50px 0
     &-block
         +row-flex()
         justify-content: space-between
         align-items: center
         min-height: 450px
+        +lg-block
+            justify-content: center
+            min-height: 300px
         &__img
             +col()
             +size(5)
+            +size-lg(6)
+            +size-md(8)
+            +size-sm(12)
+            +md(margin-bottom, 30px)
             img
                 width: 100%
                 height: auto
         &__text
             +col()
             +size(6)
+            +size-lg(12)
             font-family: $roboto
         &__descr
             font-weight: 500

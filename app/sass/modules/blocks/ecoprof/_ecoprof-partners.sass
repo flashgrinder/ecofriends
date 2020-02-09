@@ -7,7 +7,7 @@
         font-family: $roboto
         font-size: 30px
         font-weight: 900
-        line-height: 35px
+        line-height: 33px
         text-align: center
         text-transform: uppercase
         color: $blue
@@ -16,7 +16,12 @@
         +row-flex()
         justify-content: space-between
         margin-top: 50px
+        +md(justify-content, center)
     &__logo
         +col()
         +size(3)
+        +size-lg(3)
+        +size-md(6)
+        +size-sm(6)
         margin-bottom: 50px
+        +md(text-align, center)

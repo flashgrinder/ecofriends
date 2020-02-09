@@ -5,11 +5,15 @@
 .ecoprof-members
     &__heading
         margin-bottom: 30px
+        +md(text-align, center)
     &__letter
         font-weight: 900
         font-size: 50px
         line-height: 59px
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
         &_blue
             color: $blue
         &_green
@@ -21,6 +25,9 @@
     &__text
         +col()
         +size(5)
+        +size-lg(6)
+        +size-md(12)
+        +size-sm(12)
     &__list
         margin-bottom: 15px
     &__title
@@ -44,4 +51,9 @@
     &__img
         +col()
         +size(7)
+        +size-lg(6)
+        +size-md(12)
+        +size-sm(12)
         text-align: right
+        +md(text-align, center)
+        +md(margin-top, 30px)

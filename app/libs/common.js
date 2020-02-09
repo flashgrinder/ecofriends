@@ -1,27 +1,12 @@
 document.addEventListener('DOMContentLoaded', function(e){
 
-    /* var mobMenu = document.querySelector('.headerContainer__burger');
-    var menuToggle = document.querySelector('.headerContainer__menu');
+    var mobMenu = document.querySelector('.burger');
+    var menuToggle = document.querySelector('.navigation-block');
 
     mobMenu.addEventListener('click', function(e) {
-        menuToggle.classList.toggle('headerContainer__menu_active');
+        menuToggle.classList.toggle('navigation-block_active');
         e.preventDefault;
-    }) */
-
-    // var sliderHeader = new Swiper ('.headerBanner__slider', {
-    //     direction: 'horizontal',
-    //     loop: true,
-    //     effect: 'fade',
-    //     allowTouchMove: false,
-    //     watchSlidesProgress: true,
-    //     speed: 3000,
-    //     fadeEffect: {
-    //         crossFade: true
-    //     },
-    //     autoplay: {
-    //         delay: 4000
-    //     }
-    // });
+    })
 
     var sliderTeam = new Swiper ('.team-block__slider', {
         direction: 'horizontal',
@@ -30,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(e){
         slidesPerGroup: 5,
         loopFillGroupWithBlank: true,
         watchSlidesProgress: true,
-        speed: 3000,
+        speed: 1000,
         autoplay: {
             delay: 4000
         },

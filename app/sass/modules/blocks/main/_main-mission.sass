@@ -10,6 +10,7 @@
     &__text
         +col()
         +size(4.7)
+        +size-lg(12)
     &__wrapper
         display: flex
     &__letter
@@ -17,6 +18,9 @@
         font-weight: 900
         line-height: 59px
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
         &_green
             color: $green
         &_blue
@@ -39,6 +43,7 @@
         color: $white
         z-index: 3
         margin-top: 80px
+        +md(margin, 50px 30px 0 30px)
         &::before
             content: ''
             background: $blue
@@ -52,4 +57,6 @@
     &__img
         +col()
         +size(7)
+        +size-lg(12)
+        +lg(margin-top, 50px)
         text-align: center

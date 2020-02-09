@@ -17,7 +17,8 @@
         font-size: 28px
         line-height: 33px
         color: $white
-        margin: 10px 0
+        margin: 0
+        +md(font-size, 24px)
 /* Statistic Block */
 .statistic-block
     font-family: $roboto
@@ -25,12 +26,21 @@
     margin-top: 100px
     background: linear-gradient(180deg, rgba(50, 76, 100, 0.42) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 162, 230, 0.5)
     &__container
-        display: flex
+        +row-flex()
         justify-content: space-between
         align-items: flex-start
         margin-top: 50px
+        +xl-block
+            justify-content: space-around
+            margin-top: 0
     &__item
+        +col()
+        +size(3)
+        +size-xl(6)
+        +size-sm(12)
         display: flex
+        justify-content: center
+        +xl(margin-top, 50px)
     &__title
         font-weight: 500
         font-size: 20px
@@ -56,7 +66,7 @@
         margin-top: 10px
     &__phrase
         margin-top: 50px
-        margin-bottom: 50px
+        margin-bottom: 50px  
     &__downtext
         font-size: 28px
         font-weight: 500
@@ -65,3 +75,5 @@
         text-align: left
         margin: 0
         color: $white
+        +xl(text-align, center)
+        +md(font-size, 24px)

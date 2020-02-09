@@ -4,6 +4,7 @@
     background: #F3F3F3
     padding: 50px 0 0 0
     min-height: 900px
+    +lg(padding-bottom, 200px)
     &::before
         position: absolute
         content: ''
@@ -12,15 +13,21 @@
         bottom: 0
         width: 235px
         height: 310px
+        z-index: 1
 .ecoprof-task
     font-family: $roboto
     &__heading
         margin-bottom: 30px
+        +md(text-align, center)
     &__letter
         font-weight: 900
         font-size: 50px
         line-height: 59px
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
+            text-align: center
         &_blue
             color: $blue
         &_green
@@ -30,9 +37,14 @@
         +row-flex()
         justify-content: space-between
         align-items: flex-start
+        +md(justify-content, center)
     &__item
         +col()
         +size(3)
+        +size-lg(6)
+        +size-md(12)
+        position: relative
+        z-index: 5
         padding: 10px 30px
         background: $blue
         border-radius: 25px 0px

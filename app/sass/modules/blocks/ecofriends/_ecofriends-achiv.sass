@@ -5,12 +5,19 @@
     font-family: $roboto
     &__heading
         display: flex
+        +md(justify-content, center)
     &__letter
         font-weight: 900
         font-size: 50px
         line-height: 59px
         text-transform: uppercase
         margin-bottom: 30px
+        +md-block
+            font-size: 30px
+            line-height: 33px
+        +md-block
+            font-size: 24px
+            line-height: 27px
         &_blue
             color: $blue
         &_green
@@ -20,11 +27,21 @@
         +row-flex()
         justify-content: space-between
         align-items: flex-start
+        +xl(justify-content, center)
     &__item
         +col()
         +size(4)
+        +size-xl(6)
+        +size-md(8)
+        +size-sm(12)
+        +size-xs(12)
         text-align: center
         position: relative
+        +md-block
+            &:nth-child(2)
+                margin-top: 100px
+            &:nth-child(3)
+                margin-top: 100px
         &::before
             position: absolute
             content: ''
@@ -33,11 +50,18 @@
             right: 0
             left: 0
             bottom: -170px
+            +md(bottom, -120px)
+            +sm-block
+                background-size: contain
+                bottom: -130px
     &__num
         font-weight: 900
         font-size: 100px
         line-height: 117px
         color: $blue
+        +md-block
+            font-size: 80px
+            line-height: 89px
     &__text
         position: relative
         min-height: 200px
@@ -48,8 +72,10 @@
         align-items: center
         margin: 20px auto 0 auto
         width: 55%
-        font-weight: normal;
+        font-weight: normal
         font-size: 14px
         line-height: 19px
         color: $grey
+        +md(margin, 0 auto 0 auto)
+        +xs(width, 70%)
         

@@ -44,23 +44,20 @@
               НКО «Фонд регионального экономического развития «Инвестиции и регионы»»
             </div>
           </div>
+          <div class="burger">
+            <span class="burger__line"></span>
+          </div>
           <div class="navigation-block">
               <nav class="menu-top">
                 <ul>
                   <li>
-                    <a href="#">Проекты</a>
+                    <a href="javascript:;">Проекты</a>
                     <ul class="menu-top__submenu">
                       <li>
-                        <a href="page-center_one.html">ECOProF</a>
+                        <a href="#">ECOProF</a>
                       </li>
                       <li>
-                        <a href="page-center_two.html">Чистые Игры</a>
-                      </li>
-                      <li>
-                        <a href="page-center_one.html">ECOProF</a>
-                      </li>
-                      <li>
-                        <a href="page-center_two.html">Чистые Игры</a>
+                        <a href="#">Чистые Игры</a>
                       </li>
                     </ul>
                   </li>
@@ -78,11 +75,23 @@
                   </li>
               </ul>
             </nav>
-            <a href="#" class="button-primary button-primary_size_s">Вход/Регистрация</a>
+            <a href="#" class="button-primary button-primary_size_s hide">Вход/Регистрация</a>
           </div>
         </div>
       </div>
     </header>
+    <!-- Modal Window -->
+    <div class="modalContainer" id="modal" style="display: none;">
+      <div class="modalContainer__wrapp">
+          <h4 class="modalContainer__heading">Оставьте заявку</h4>
+          <form>
+              <input type="text" placeholder="Имя"/>
+              <input type="email" placeholder="Email"/>
+              <input type="tel" name="" placeholder="Телефон"/>
+              <input type="submit"/>
+          </form>
+      </div>
+    </div>
     <!-- Content -->
     <main class="main">
       <!-- Screen Block -->
@@ -166,7 +175,7 @@
                 </div>
               </div>
               <div class="about-block__btn">
-                <a href="#" class="button-primary button-primary_size_m">Присоеденится к проекту</a>
+                <a class="button-primary button-primary_size_m" href="javascript:;" data-fancybox="btn-header" data-src="#modal" data-animation-duration="700">Присоеденится к проекту</a>
               </div>
             </div>
             <div class="about-block__img"></div>
@@ -249,7 +258,7 @@
             <div class="centers-block__img">
               <img class="scale" src="img/main/img-centers-2.jpg" alt="">
               <div class="centers-block__logo">
-                <img src="img/main/logo-ecofriends_white.png" alt="">
+                <img src="img/ecoprof/logo-ecoprof-big.png" alt="">
               </div>
               <div class="centers-block__btn">
                 <a href="#" class="button-trs button-trs_size_m">Узнать подробнее</a>
@@ -458,7 +467,7 @@
         <address class="contacts-block__adress">
           <div class="contacts-block__wrapp">
             <span class="contacts-block__text">
-              АДРЕС, ТЕЛЕФОН, КОНТАКТНАЯ ИНФОРМАЦИЯ
+              г. Саратов, Вавилова 36
             </span>
           </div>
         </address>
@@ -477,8 +486,8 @@
               </div>
             </div>
             <div class="footer-phone">
-              <a href="tel:" class="footer-phone__num">
-                +7 (8452) 00-00-00
+              <a href="tel:+7-927-629-63-50" class="footer-phone__num">
+                +7-927-629-63-50
               </a>
             </div>
             <div class="footer-menu">
@@ -513,7 +522,7 @@
           </div>
           <div class="footer-social">
             <div class="footer-social__btn">
-              <a href="#" class="button-primary button-primary_size-m">
+              <a class="button-primary button-primary_size-m" href="javascript:;" data-fancybox="btn-footer" data-src="#modal" data-animation-duration="700">
                 Присоедениться к проекту
               </a>
             </div>
@@ -522,13 +531,13 @@
                 Мы в соц.сетях:
               </div>
               <div class="footer-social__icons">
-                <a href="" class="footer-social__icons-img">
+                <a href="https://vk.com/ecofriends_project" class="footer-social__icons-img">
                   <img src="img/icons/vk-icons.png" alt="">
                 </a>
-                <a href="#" class="footer-social__icons-img">
+                <a href="https://www.facebook.com/ecofriendsproject" class="footer-social__icons-img">
                   <img src="img/icons/fb-icons.png" alt="">
                 </a>
-                <a href="#" class="footer-social__icons-img">
+                <a href="https://www.instagram.com/ecofriends_project/" class="footer-social__icons-img">
                   <img src="img/icons/inst-icons.png" alt="">
                 </a>
               </div>

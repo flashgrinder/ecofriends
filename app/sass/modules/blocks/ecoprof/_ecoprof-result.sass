@@ -6,20 +6,29 @@
 .ecoprof-result
     &__heading
         margin-bottom: 30px
+        +md(text-align, center)
     &__letter
         font-weight: 900
         font-size: 50px
         line-height: 59px
         text-transform: uppercase
+        +md-block
+            font-size: 30px
+            line-height: 33px
         &_blue
             color: $blue
         &_green
             color: $green
     &__content
         +row-flex()
+        +md(justify-content, center)
     &__text
         +col()
         +size(5)
+        +size-lg(6)
+        +size-md(10)
+        +size-sm(12)
+        +md(margin-bottom, 30px)
     &__list
         li
             position: relative
@@ -44,4 +53,7 @@
     &__img
         +col()
         +size(7)
+        +size-lg(6)
+        +size-md(12)
         text-align: right
+        +md(text-align, center)

@@ -5,7 +5,7 @@
     background: $white
 .blogBlock
     font-family: $roboto
-    padding-top: 50px
+    padding-top: 100px
     padding-bottom: 50px
     &__title
         font-size: 30px
@@ -13,8 +13,9 @@
         line-height: 33px
         text-transform: uppercase
         text-align: center
-        margin: 60px auto
+        margin: 60px auto 60px auto
         color: $blue
+        +md(margin, 60px auto 30px auto)
 .blogItem
     &__btn
         display: flex
@@ -32,6 +33,7 @@
         border-radius: 10px
         overflow: hidden
         +md(order, 1)
+        +md(height, 200px)
         img
             width: 100%
             height: 100%
@@ -66,6 +68,7 @@
         color: $grey
         margin: 24px 0
         +md(font-size, 14px)
+        +md(margin, 15px 0 15px 0)
     &__date
         font-style: $base-font-size
         font-weight: normal
