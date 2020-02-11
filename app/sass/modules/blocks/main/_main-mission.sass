@@ -1,12 +1,12 @@
 /* Main Mission Block */
 .mission-block
-    display: flex
     +row-flex()
     font-family: $roboto
     justify-content: space-between
     align-items: center
     margin-top: 50px
     margin-bottom: 70px
+    +md(justify-content, center)
     &__text
         +col()
         +size(4.7)
@@ -58,5 +58,6 @@
         +col()
         +size(7)
         +size-lg(12)
+        +size-sm(6)
         +lg(margin-top, 50px)
         text-align: center

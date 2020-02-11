@@ -3,10 +3,25 @@ document.addEventListener('DOMContentLoaded', function(e){
     var mobMenu = document.querySelector('.burger');
     var menuToggle = document.querySelector('.navigation-block');
 
-    mobMenu.addEventListener('click', function(e) {
-        menuToggle.classList.toggle('navigation-block_active');
-        e.preventDefault;
-    })
+    // mobMenu.addEventListener('click', function(e) {
+    //     menuToggle.classList.toggle('navigation-block_active');
+    //     e.preventDefault;
+    // })
+
+    var blog = document.querySelector('.blog');
+    var single = document.querySelector('.single');
+    var menu = document.querySelector('.header');
+    var logo = document.querySelector('.logo__text');
+    var headerContainer = document.querySelector('.header-container');
+
+    if(blog || single) {
+        menu.style.background = '#585858';
+        menu.style.paddingBottom = '17px';
+        logo.style.display = 'none';
+        headerContainer.style.paddingBottom = '0';
+    } else if(!blog || !single) {
+        menu.paddingBottom = '0'
+    }
 
     var sliderTeam = new Swiper ('.team-block__slider', {
         direction: 'horizontal',

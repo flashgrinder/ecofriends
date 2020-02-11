@@ -27,9 +27,13 @@
     &__item
         +col()
         +size(3.5)
-        +size-lg(10)
         +size-md(12)
         position: relative
+        +md-block
+            &:nth-child(2)
+                margin-top: 50px
+            &:nth-child(3)
+                margin-top: 50px
     &__text
         position: relative
         border-radius: 0px 25px
@@ -44,11 +48,15 @@
         font-weight: 500
         line-height: 19px
         color: $white
+        +md(text-align, center)
         b
             width: 100%
             text-align: left
             margin-bottom: 20px
             +lg(text-align, center)
+        hr
+            width: 100%
+            border: 1px solid $white
         &_blue
             background: $blue
             &::before
@@ -56,12 +64,15 @@
                 position: absolute
                 background: url('../img/ecoprof/treangle.png') no-repeat center
                 top: 50%
-                right: 0
                 right: -85px
                 width: 60px
                 height: 70px
                 transform: translateY(-50%)
-                +md(display, none)
+                +md-block
+                    top: auto
+                    right: auto
+                    bottom: -100px
+                    transform: rotate(90deg) translateX(-50%)
         &_grey
             background: $grey
             &::before
@@ -73,7 +84,11 @@
                 width: 60px
                 height: 70px
                 transform: translateY(-50%)
-                +md(display, none)
+                +md-block
+                    top: auto
+                    right: auto
+                    bottom: -100px
+                    transform: rotate(90deg) translateX(-50%)
         &_green
             background: $green
         &_big

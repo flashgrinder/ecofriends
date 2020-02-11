@@ -128,15 +128,16 @@ function styles() {
 // Собрать все скрипты.
 function scripts() {
 	return gulp.src(source.app.js + '*.js')
-	.pipe(babel({
-		presets: ['env']
-	}))
+	// .pipe(babel({
+	// 	presets: ['env']
+	// }))
 	.on('error', console.error.bind(console))
-	.pipe(uglify({
-		toplevel: true
-	}))
+	// .pipe(uglify({
+	// 	toplevel: true
+	// }))
 	.pipe(gulp.dest(source.build.js));
 }
+gulp.task('scripts', scripts);
 
 function mapjs() {
 	return gulp.src(source.app.js + '*.map')
@@ -163,7 +164,7 @@ function optimg() {
 		}),
 		imagemin.svgo(),
 		imagemin.optipng({optimizationLevel: 3}),
-		pngquant({quality: '70-80', speed: 5})
+		pngquant({quality: [0.95, 1], speed: 5})
 	],{
 		verbose: true
 	}))
